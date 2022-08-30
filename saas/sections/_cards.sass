@@ -1,0 +1,9 @@
+.img-row-price-grid
+    display: grid
+    grid-template-areas: "a b c d " "a b c d "
+    gap: 30px
+
+@media screen and ( max-width: 320px )
+    .img-row-price-grid
+        grid-template-areas: "a" "a" "a" "a" "a" "a" "a" "a"
+        justify-content: center

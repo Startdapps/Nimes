@@ -1,0 +1,67 @@
+.h1tittle
+    display: flex
+    width: 730px
+    margin: 0 auto
+
+    &__pics
+        display: grid
+        grid-template-columns: 30px 97px 232px
+        grid-template-rows: 260px
+        width: 359px
+        height: 260px
+
+.section-h1tittle
+    background-color: $white-color
+
+.h1tittle__picdown
+    grid-column: 1/2
+    align-self: end
+
+.h1tittle__piccenter
+    grid-column: 2/3
+    z-index: 1
+
+.h1tittle__picup
+    grid-column: 3/4
+
+.h1tittle__text
+    display: flex
+    align-items: center
+    width: 471px
+
+.h1tittle__link
+    color: $gray-color
+    font-size: 18px
+    margin: 0
+
+    &::after
+        content: "/"
+        padding: 0 8px
+
+    &-color
+        color: $black-color
+
+    &-color::after
+        content: none
+
+.h1-catalog
+    font-size: 32px
+    font-weight: 700
+    line-height: 40px
+    padding: 22px 0 0 0
+
+@media screen and ( max-width: 320px )
+    .h1tittle
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        width: auto
+        margin: 0 auto
+
+    .h1tittle__text
+        justify-content: center
+    .h1-catalog
+        font-size: 32px
+        font-weight: 700
+        line-height: 40px
+        padding: 22px 0 0 0

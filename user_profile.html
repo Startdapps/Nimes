@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>user profile</title>
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link href="/fav.ico" rel="icon" />
+    </head>
+    <body>
+        <header>
+            <div class="header container">
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <li><a href="#">Woman</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">New</a></li>
+                    </ul>
+                </nav>
+                <a href="./Index.html"
+                    ><img src="./img/Nimes.svg" alt="logo"
+                /></a>
+                <div class="header__icons">
+                    <a class="header__user" href="#">User</a>
+                    <a class="header__icon" href="#"
+                        ><img src="./img/search.svg" alt="search"
+                    /></a>
+                    <a class="header__icon" href="#"
+                        ><img src="./img/cart.svg" alt="cart"
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="userprofile">
+                <img
+                    src="./img/depp.png"
+                    alt="Jhny_Deph_image"
+                    class="userprofile__depp"
+                />
+                <div class="userprofile__block">
+                    <div class="userprofile__inputs">
+                        <h1 class="userprofile__h1">Your profile</h1>
+                        <form
+                            class="userprofile__form"
+                            action="#"
+                            method="post"
+                        >
+                            <div class="userprofile__inputblock">
+                                <label for="login">Login</label>
+                                <input
+                                    class="userprofile__input"
+                                    type="text"
+                                    id="login"
+                                    placeholder="Enter your login"
+                                    required
+                                />
+                            </div>
+                            <div class="userprofile__inputblock">
+                                <label for="login">Surname</label>
+                                <input
+                                    class="userprofile__input"
+                                    type="text"
+                                    id="login"
+                                    placeholder="Enter your surname"
+                                    required
+                                />
+                            </div>
+                            <div class="userprofile__inputblock">
+                                <label for="login">Birthday</label>
+                                <input
+                                    class="userprofile__input"
+                                    type="text"
+                                    id="login"
+                                    placeholder="Enter your birthday"
+                                    required
+                                />
+                            </div>
+                            <div class="userprofile__gender">
+                                <label for="gender">Gender</label>
+
+                                <label for="Male"
+                                    ><input
+                                        type="radio"
+                                        name="gender"
+                                    />Male</label
+                                >
+                                <label for="female"
+                                    ><input
+                                        type="radio"
+                                        name="gender"
+                                    />Female</label
+                                >
+                            </div>
+                            <div class="userprofile__inputblock">
+                                <label for="counrty">Counrty</label>
+                                <input
+                                    class="userprofile__input userprofile__input-selector"
+                                    list="countries"
+                                    placeholder="Select your country"
+                                />
+                                <datalist id="countries">
+                                    <option value="Russia"></option>
+                                </datalist>
+                            </div>
+                            <div class="userprofile__inputblock">
+                                <label for="city">City</label>
+                                <input
+                                    class="userprofile__input userprofile__input-selector"
+                                    list="cities"
+                                    placeholder="Select your city"
+                                />
+                                <datalist
+                                    class="userprofile__datalist"
+                                    id="cities"
+                                >
+                                    <option
+                                        class="userprofile__option"
+                                        value="Moscow"
+                                    ></option>
+                                    <option value="Khabarovsk"></option>
+                                </datalist>
+                            </div>
+                            <div class="userprofile__inputblock">
+                                <label for="login">E-mail</label>
+                                <input
+                                    class="userprofile__input"
+                                    type="text"
+                                    id="login"
+                                    placeholder="Enter your e-mail"
+                                    required
+                                />
+                            </div>
+                            <div class="userprofile__inputblock">
+                                <label for="login">Phone</label>
+                                <input
+                                    class="userprofile__input"
+                                    type="text"
+                                    id="login"
+                                    placeholder="Enter your phone"
+                                    required
+                                />
+                            </div>
+                            <div class="userprofile__textarea">
+                                <label for="about-yourself"
+                                    >About yourself</label
+                                >
+                                <textarea
+                                    class="userprofile__area"
+                                    name="about-yourself"
+                                    id=""
+                                    cols="30"
+                                    rows="10"
+                                ></textarea>
+                            </div>
+                        </form>
+                        <button class="userprofile__button">Save</button>
+                    </div>
+                </div>
+                <div class="history-wrapper">
+                    <div class="history-warpper__container">
+                        <article class="history">
+                            <h4 class="history__h4">History</h4>
+                            <table class="history__table">
+                                <tr>
+                                    <td class="history__col1">28.02.1990</td>
+                                    <td class="history__col2">Jacket</td>
+                                    <td class="history__col2">1</td>
+                                    <td class="history__col4">$60</td>
+                                </tr>
+                                <tr>
+                                    <td class="history__col1">15.07.2002</td>
+                                    <td class="history__col2">
+                                        Jacket Black XXL
+                                    </td>
+                                    <td class="history__col2">1</td>
+                                    <td class="history__col4">$260</td>
+                                </tr>
+                                <tr>
+                                    <td class="history__col1">07.09.2003</td>
+                                    <td class="history__col2">Overalls</td>
+                                    <td class="history__col2">5</td>
+                                    <td class="history__col4">$6000</td>
+                                </tr>
+                                <tr>
+                                    <td class="history__col1">15.09.2003</td>
+                                    <td class="history__col2">
+                                        Model White Extra
+                                    </td>
+                                    <td class="history__col2">1</td>
+                                    <td class="history__col4">$58</td>
+                                </tr>
+                                <tr>
+                                    <td class="history__col1">25.05.2005</td>
+                                    <td class="history__col2">Jacket</td>
+                                    <td class="history__col2">1</td>
+                                    <td class="history__col4">$8</td>
+                                </tr>
+                                <tr>
+                                    <td class="history__col1">28.02.2020</td>
+                                    <td class="history__col2">Jacket</td>
+                                    <td class="history__col2">3</td>
+                                    <td class="history__col4">$60</td>
+                                </tr>
+                            </table>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-container">
+                    <a class="footer__logo" href="#"
+                        ><img src="./img/Nimeswhite.svg" alt="logo"
+                    /></a>
+                    <nav class="footer__nav">
+                        <ul class="footer__ul">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="./contact.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__socials">
+                        <a
+                            target="_blank"
+                            href="https://facebook.com/"
+                            class="footer__cosial-icons"
+                        >
+                            <img src="./img/fblogo.svg" alt="fb" /> </a
+                        ><a
+                            target="_blank"
+                            href="https://instagram.com/"
+                            class="footer__cosial-icons"
+                            ><img src="./img/instalogo.svg" alt="fb" /></a
+                        ><a
+                            target="_blank"
+                            href="https://pinterest.com/"
+                            class="footer__cosial-icons"
+                            ><img src="./img/pintlogo.svg" alt="fb" /></a
+                        ><a
+                            target="_blank"
+                            href="https://twitter.com/"
+                            class="footer__cosial-icons"
+                            ><img src="./img/twitter.svg" alt="fb"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

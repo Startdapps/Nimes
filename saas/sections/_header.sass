@@ -1,0 +1,45 @@
+.header
+    display: flex
+    justify-content: space-between
+    height: 89px
+    align-items: center
+
+    &__ul
+        display: flex
+        justify-content: space-between
+        width: 197px
+        list-style: none
+
+    &__icons
+        display: flex
+        align-items: center
+        justify-content: end
+        width: 197px
+        line-height: 0
+
+    &__icon
+        margin-left: 35px
+
+    &__icon img
+        width: 18px
+        height: 18px
+
+@media screen and ( max-width: 320px )
+    .header
+        flex-wrap: wrap
+        justify-content: center
+        height: auto
+        &__ul
+            display: block
+            justify-content: space-between
+            width: 197px
+            list-style: none
+            text-align: center
+            line-height: 1.5
+        &__logo
+            order: 1
+        &__nav
+            padding: 20px 0 40px
+            order: 2
+        &__icons
+            order: 1

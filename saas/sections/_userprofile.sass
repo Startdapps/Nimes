@@ -1,0 +1,112 @@
+.userprofile
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    column-gap: 130px
+    row-gap: 97px
+    height: 1221px
+    margin-top: 48px
+
+    &__h1
+        margin: 0
+
+    &__form
+        margin-top: 63px
+
+    &__block
+        grid-row: span 2
+        background-color: $gray-color2
+
+    textarea
+        width: 100%
+
+    &__depp
+        justify-self: end
+
+    &__inputblock
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 19px
+
+    &__input
+        width: 389px
+        height: 50px
+        border-color: $black-color
+        padding-left: 29px
+        background-color: $gray-color2
+
+    .userprofile__input-selector
+        background-image: url(../../img/arrow.svg)
+        background-repeat: no-repeat
+        background-position: calc( 100% - 20px )
+
+    &__radio
+        cursor: pointer
+        border: solid 2px
+    &__inputs
+        display: flex
+        flex-direction: column
+        grid-row: span 2
+        background-color: $gray-color2
+        width: 500px
+        margin: 70px auto
+
+    &__button
+        align-self: end
+        margin-top: 58px
+        width: 200px
+        height: 64px
+        border: none
+        background-color: $black-color
+        color: $white-color
+        font-family: 'Work Sans'
+        font-weight: 700
+        font-size: 16px
+    &__gender
+        display: flex
+        width: 311px
+        justify-content: space-between
+        margin-bottom: 78px
+        margin-top: 34px
+        input
+            margin-right: 16px
+
+    &__textarea
+
+        margin-top: 67px
+        line-height: 3
+        textarea
+            background-color: $gray-color2
+            border: solid black 2px
+
+.history-wrapper
+    background-color: $gray-color2
+
+.history-warpper__container
+    width: min-content
+    margin: 46px auto 0
+
+.history
+    background-color: $gray-color2
+    &__table
+        white-space: nowrap
+        text-align: left
+        border-spacing: 40px 40px
+
+.history__h4
+    margin-bottom: 29px
+    padding-left: 40px
+
+.history__col1
+    color: $gray-color
+    font-family: 'Work Sans'
+    font-weight: 400
+
+.history__col2
+    font-weight: 500
+    font-size: 18px
+
+.history__col4
+    font-weight: 700
+    font-size: 16px
